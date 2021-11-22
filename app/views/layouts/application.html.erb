@@ -9,10 +9,19 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= render '/layouts/css_snippet' %>
+    <%= render '/layouts/partials/css_snippet' %>
   </head>
 
   <body>
+    <%= render '/layouts/partials/header' %>
+    <% if notice %>
+      <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
     <%= yield %>
   </body>
+  <%= render '/layouts/partials/js_snippet' %>
+
 </html>

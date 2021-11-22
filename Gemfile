@@ -22,6 +22,15 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# use ActiveAdmin for managing database
+gem 'activeadmin'
+# use devise for authentication
+gem 'devise'
+# allows me to set environment variables in the local environmentß
+gem 'figaro', '~> 1.1', '>= 1.1.1'
+# open emails in browser in development
+gem "letter_opener", group: :development
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
